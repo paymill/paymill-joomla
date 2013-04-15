@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>Paymill</name>
+	<creationDate>April 2013</creationDate>
+	<author>Maximilian Kimmel</author>
+	<authorEmail>maximilian.kimmel@paymill.com</authorEmail>
+	<authorUrl>http://www.paymill.com</authorUrl>
+	<copyright>(c) Paymill GmbH</copyright>
+	<license>Licensed and developped for and by Paymill GmbH</license>
+	<version>1.0.0</version>
+	<description>Manual payment component via Paymill</description>
+
+	<install>
+    	<sql>
+        	<file driver="mysql" charset="utf8">sql/updates/mysql/0.0.1.sql</file>
+        </sql>
+    </install>
+	<update>
+		<schemas>
+			<file driver="mysql" charset="utf8">sql/updates/mysql/0.0.1.sql</file>
+		</schemas>
+	</update>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>paymill.php</filename>
+		<filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>lib</folder>
+		<folder>views</folder>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>Paymill</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.paymill.php</filename>
+			<filename>paymill.php</filename>
+			<filename>controller.php</filename>
+			<filename>toolbar.paymill.html.php</filename>
+			<filename>toolbar.paymill.php</filename>
+			<folder>js</folder>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+		</files>
+	</administration>
+</extension>
+

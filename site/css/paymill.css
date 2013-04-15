@@ -1,0 +1,27 @@
+/*
+Version 1.00
+Author: Paymill GmbH - M. Kimmel, 2013
+*/
+
+.form-row {
+    width: 450px;
+    padding: 3px;
+}
+.labeldiv {
+    float: left;
+    width: 200px;
+}
+.paymill-button {
+    padding: 10px;
+}
+.paymill-button:hover {
+    color: #808080;
+    cursor: pointer;
+}
+input[type=text], input[type=number] {
+    padding: 5px;
+    color: #525252;
+}
+input[type=text]:hover, input[type=number]:hover {
+    background: #efefef;
+}
