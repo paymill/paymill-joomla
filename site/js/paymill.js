@@ -44,7 +44,7 @@ function PaymillResponseHandler(error, result) {
         form.append("<input type='hidden' name='paymillToken' value='" + token + "'/>");
 
         $.post(
-            "index.php?option=com_paymill&task=payCC",
+            "index.php?option=com_paymill&task=payCC&format=raw",
             $("#payment-form").serialize(),
             function(result) {
                 //very simple frontend test if API response sets transaction to closed
