@@ -48,7 +48,7 @@ function PaymillResponseHandler(error, result) {
             $("#payment-form").serialize(),
             function(result) {
                 //very simple frontend test if API response sets transaction to closed
-                if(result.indexOf('closed') != -1) {
+                if(result.status == 'closed') {
                     $('.payment-errors').html('<span style="color: #009900">Payment successfully done!</span>');
                 }
                 else {

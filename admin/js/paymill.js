@@ -6,7 +6,7 @@ $(document).ready(function () {
         var data = $('#paymill-settings').serialize();
 
         $.ajax({
-            type: 'GET',
+            type: 'POST',
             url: ROOT + 'index.php?option=com_paymill&task=saveKeys',
             data: data,
             success: function(response) {

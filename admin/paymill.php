@@ -7,19 +7,6 @@
     $db->setQuery( $q );
     $settings = $db->loadAssoc();
 
-    if($_GET["task"] == "saveKeys") {
-        $q  = "UPDATE #__paymill_settings SET ";
-        $q .= "mode = '" .$_GET["mode"]. "', ";
-        $q .= "public_test = '" .$_GET["public_test"]. "', ";
-        $q .= "private_test = '" .$_GET["private_test"]. "', ";
-        $q .= "public_live = '" .$_GET["public_live"]. "', ";
-        $q .= "private_live = '" .$_GET["private_live"]. "' ";
-        $q .= "WHERE id = 1";
-
-        $db->setQuery( $q );
-        $db->query();
-    }
-
     $document = &JFactory::getDocument();
     $document->addScript('components/com_paymill/js/jquery-1.9.1.min.js');
     $document->addScript('components/com_paymill/js/paymill.js');
