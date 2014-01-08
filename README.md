@@ -1,5 +1,5 @@
-Paymill-Joomla (Beta)
-=====================
+Paymill-Joomla [Deprecated 2014-01-08]
+======================================
 
 Paymill Joomla extension for public use. We do not guarantee 100% functionality due to the fact that this plugin is
 in beta phase.
